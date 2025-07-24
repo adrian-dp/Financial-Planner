@@ -34,7 +34,7 @@ I am building this project mainly to develop various skills such as using GitHub
 Adrian Diaz Posada
 
 [GitHub Profile](https://github.com/adrian-dp)
-[LinkedIn Profile](www.linkedin.com/in/adriandp8)
+[LinkedIn Profile](https://www.linkedin.com/in/adriandp8)
 
 ---
 
