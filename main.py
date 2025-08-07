@@ -1,5 +1,10 @@
 import wx
 
+'''
+Notes:
+- merge bank accounts
+'''
+
 # 1. Define a custom frame (main window)
 class MainWindow(wx.Frame):
     def __init__(self, parent, title):

@@ -1,3 +1,5 @@
+from datetime import datetime
+
 class Expense():
     def __init__(self, amount, date = 'None', category = 'None', description = 'None'):
         if amount <= 0:
@@ -6,6 +8,12 @@ class Expense():
         self._date = date
         self._category = category
         self._description = description
+
+    def _parse_date(self, date):
+        if isinstance(date, str) and date != 'None':
+            return datetime.strptime(date, '%Y-%m-%d').date()
+        else:
+            return datetime.today().date()
     
     @property
     def amount(self): return self._amount
@@ -26,7 +34,7 @@ class Expense():
         self._amount = new_amount
 
     @date.setter
-    def date(self, new_date): self._date = new_date
+    def date(self, new_date): self._date = self._parse_date(new_date)
 
     @category.setter
     def category(self, new_category): self._category = new_category
